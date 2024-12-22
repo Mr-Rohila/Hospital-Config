@@ -47,6 +47,13 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://hospital:1234@3.6.190.226:8761/eureka
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
+  config: classpath:logback-spring.xml  
 #logging:
 #  level:
 #     '[org.springframework.security]': trace
