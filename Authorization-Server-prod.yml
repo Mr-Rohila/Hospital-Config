@@ -1,7 +1,7 @@
 jwt:
  issuer-uri: http://3.6.190.226
 server:
-  port: 9091
+  port: 80
   error:
     whitelabel:
       enabled: false
