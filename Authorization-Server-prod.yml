@@ -10,7 +10,7 @@ spring:
   application:
     name:  Authorization-Server
   datasource:
-    url: jdbc:mysql://13.203.167.74/:3306/auth_server
+    url: jdbc:mysql://13.203.167.74:3306/auth_server
     username: ankush
     password: Rohila@0
     driver-class-name: com.mysql.cj.jdbc.Driver
