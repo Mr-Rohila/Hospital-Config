@@ -1,0 +1,52 @@
+jwt:
+ issuer-uri: http://3.6.190.226
+server:
+  port: 9091
+  error:
+    whitelabel:
+      enabled: false
+    path: /error
+spring:
+  application:
+    name:  Authorization-Server
+  datasource:
+    url: jdbc:mysql://13.203.167.74/:3306/auth_server
+    username: ankush
+    password: Rohila@0
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+  security:
+    oauth2:
+      client:
+        registration:
+         facebook:
+          clientId: 1497943314181214
+          clientSecret: bdeaaece90bd68e197224955329a990d
+          scope:
+           - email
+           - public_profile
+         google:
+          clientId: 691984437061-3prchb7uniora2ck7dm0uv0u9lj1dsje.apps.googleusercontent.com
+          clientSecret: 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
+          scope:
+           - email
+           - profile
+           - openid
+  
+         
+           
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://hospital:1234@3.6.190.226:8761/eureka
+#logging:
+#  level:
+#     '[org.springframework.security]': trace
+#     '[org.springframework.security.oauth2]': trace 
+      
