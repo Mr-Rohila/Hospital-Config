@@ -18,9 +18,9 @@ spring:
     name: Notification-Service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: ankush
+    password: Rohila@0
     url: jdbc:mysql://13.203.167.74:3306/notification
-    username: Rohila@0
+    username: ankush
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
