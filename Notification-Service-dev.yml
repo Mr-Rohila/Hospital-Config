@@ -1,0 +1,55 @@
+server:
+  error:
+    whitelabel:
+      enabled: false
+  port: 8081
+  
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://hospital:1234@3.6.190.226:8761/eureka
+  instance:
+    hostname: ec2-3-6-190-226.ap-south-1.compute.amazonaws.com:8081
+  
+spring:
+  application:
+    name: Notification-Service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ankush
+    url: jdbc:mysql://13.203.167.74:3306/notification
+    username: Rohila@0
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    password: jrdojpqfyjysuojr
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          starttls:
+            enable: true
+            required: true
+          timeout: 5000
+          writetimeout: 5000
+    username: rajputankushrohila@gmail.com
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://ec2-3-6-190-226.ap-south-1.compute.amazonaws.com
+          
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
+  config: classpath:logback-spring.xml  
