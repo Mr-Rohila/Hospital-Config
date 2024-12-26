@@ -1,5 +1,5 @@
 jwt:
- issuer-uri: http://3.6.190.226
+ issuer-uri: http://ec2-3-6-190-226.ap-south-1.compute.amazonaws.com
 server:
   port: 80
   error:
@@ -41,7 +41,7 @@ spring:
            
 eureka:
   instance:
-    hostname: 3.6.190.226
+    hostname: http://ec2-3-6-190-226.ap-south-1.compute.amazonaws.com
   client:
     register-with-eureka: true
     fetch-registry: true
