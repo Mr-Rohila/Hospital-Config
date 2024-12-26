@@ -41,7 +41,7 @@ spring:
            
 eureka:
   instance:
-    hostname: http://ec2-3-6-190-226.ap-south-1.compute.amazonaws.com
+    hostname: ec2-3-6-190-226.ap-south-1.compute.amazonaws.com
   client:
     register-with-eureka: true
     fetch-registry: true
