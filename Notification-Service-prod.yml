@@ -11,7 +11,7 @@ eureka:
     service-url:
       defaultZone: http://hospital:1234@3.6.190.226:8761/eureka
   instance:
-    hostname: ec2-3-6-190-226.ap-south-1.compute.amazonaws.com:8081
+    hostname: ec2-3-6-190-226.ap-south-1.compute.amazonaws.com
   
 spring:
   application:
