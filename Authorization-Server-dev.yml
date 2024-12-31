@@ -1,5 +1,5 @@
 jwt:
- issuer-uri: http://localhost:9090
+ issuer-uri: http://localhost:9091
 server:
   port: 9091
   error:
