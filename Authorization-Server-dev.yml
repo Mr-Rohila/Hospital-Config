@@ -36,9 +36,7 @@ spring:
            - email
            - profile
            - openid
-  
-         
-           
+        
 eureka:
   client:
     register-with-eureka: true
@@ -46,9 +44,9 @@ eureka:
     service-url:
       defaultZone: http://hospital:1234@3.6.190.226:8761/eureka
 logging:
-  config: classpath:logback-spring.xml  
-#logging:
-#  level:
-#     '[org.springframework.security]': trace
-#     '[org.springframework.security.oauth2]': trace 
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
       
