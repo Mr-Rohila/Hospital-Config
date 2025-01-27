@@ -1,5 +1,5 @@
 jwt:
- issuer-uri: http://ec2-3-6-190-226.ap-south-1.compute.amazonaws.com
+ issuer-uri: http://localhost:${server.port}
 server:
   port: 9091
   error:
